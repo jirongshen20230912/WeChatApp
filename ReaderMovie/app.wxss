@@ -1,4 +1,4 @@
-/**app.wxss这个是样式**/
+/**app.wxss这是样式**/
 .container {
   height: 100%;
   display: flex;
