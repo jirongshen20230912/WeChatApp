@@ -1,14 +1,30 @@
 <!--pages/posts/post.wxml-->
 <view>
-    <swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
-        <swiper-item>
-            <image  src="/images/wx.png" ></image>
-        </swiper-item>
-        <swiper-item>
-            <image src="/images/vr.png" ></image>
-        </swiper-item>
-        <swiper-item>
-            <image src="/images/iqiyi.png"></image>
-        </swiper-item>
-    </swiper>
+  <swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+    <swiper-item>
+      <image src="/images/wx.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/iqiyi.png"></image>
+    </swiper-item>
+  </swiper>
+  <view class="post-container">
+    <view class="post-author-date">
+      <image class="post-author" src="/images/avatar/2.png"></image>
+      <text class="post-date">2018年5月16日</text>
+    </view>
+    <text class="post-title">大螃蟹,小扒皮</text>
+    <image class="post-image" src="/images/post/crab.png"></image>
+    <text class="post-content">绝大多数种类的螃蟹生活在海里或近海区，也有一些栖于淡水或陆地。它们靠母蟹来生小螃蟹，每次母蟹都会产很多的卵，数量可达数百万粒以上。螃蟹是依靠地磁场来判断方向的。这类生物遗传物质数目复杂且有着很大的差异性，常多达100多对.</text>
+    <view class="post-like">
+      <image class="post-like-image" src="/images/icon/chat.png"></image>
+      <text class="post-like-font">108</text>
+
+      <image class="post-like-image" src="/images/icon/view.png"></image>
+      <text class="post-like-font">108</text>
+    </view>
+  </view>
 </view>
