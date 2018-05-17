@@ -11,20 +11,22 @@
       <image src="/images/iqiyi.png"></image>
     </swiper-item>
   </swiper>
-  <view class="post-container">
-    <view class="post-author-date">
-      <image class="post-author" src="/images/avatar/2.png"></image>
-      <text class="post-date">2018年5月16日</text>
-    </view>
-    <text class="post-title">大螃蟹,小扒皮</text>
-    <image class="post-image" src="/images/post/crab.png"></image>
-    <text class="post-content">绝大多数种类的螃蟹生活在海里或近海区，也有一些栖于淡水或陆地。它们靠母蟹来生小螃蟹，每次母蟹都会产很多的卵，数量可达数百万粒以上。螃蟹是依靠地磁场来判断方向的。这类生物遗传物质数目复杂且有着很大的差异性，常多达100多对.</text>
-    <view class="post-like">
-      <image class="post-like-image" src="/images/icon/chat.png"></image>
-      <text class="post-like-font">108</text>
 
-      <image class="post-like-image" src="/images/icon/view.png"></image>
-      <text class="post-like-font">108</text>
+  <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
+    <view class="post-container">
+      <view class="post-author-date">
+        <image class="post-author" src="{{item.avatar}}"></image>
+        <text class="post-date">{{item.date}}</text>
+      </view>
+      <text class="post-title">{{item.title}}</text>
+      <image class="post-image" src="{{item.imgSrc}}"></image>
+      <text class="post-content">{{item.content}}</text>
+      <view class="post-like">
+        <image class="post-like-image" src="/images/icon/chat.png"></image>
+        <text class="post-like-font">{{item.collection}}</text>
+        <image class="post-like-image" src="/images/icon/view.png"></image>
+        <text class="post-like-font">{{item.reading}}</text>
+      </view>
     </view>
-  </view>
+  </block>
 </view>
