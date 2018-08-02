@@ -5,7 +5,7 @@ Page({
     //     url:"../posts/post"
     // });
 
-    wx.redirectTo({
+    wx.switchTab({
       url: "../posts/post"
     });
 
